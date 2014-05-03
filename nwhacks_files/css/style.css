@@ -1,5 +1,5 @@
 body {    
-    margin-top:0px;
+    margin:0px;
     text-rendering: optimizeLegibility; 
     -webkit-font-smoothing: antialiased;    
 }
@@ -351,7 +351,7 @@ nav #logo a {
 /*##################################################################*/
 
 #home {
-    height:661px;
+    height:681px;
     width:100%;
     background-color: #282827;
     background-image: url(../img/header.jpg);
