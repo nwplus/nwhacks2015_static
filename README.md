@@ -1,3 +1,1 @@
-nwhacks.github.io
-=================
-Official site for nwhacks (for now lol)
+[Site](http://hackouver.com). Nothing much to see here.
