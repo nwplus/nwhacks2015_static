@@ -216,6 +216,20 @@ header {
 	.bronze {background-color: $bronze;}
 }
 
+// FAQ ****************************
+
+#faq {
+		padding: 100px 0;
+
+		h2 {
+			z-index: 5;
+			font-weight: 700;
+			font-size: 2em;
+			margin-bottom: 2em;
+			font-family: lato, sans-serif;
+			color: $darkgrey;}
+}
+
 // Headings ***********************
 h1 {}
 h2 {}
