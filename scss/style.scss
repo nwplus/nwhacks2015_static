@@ -1,14 +1,86 @@
-/* imports */
+// MAIN STYLESHEET -- style.scss
+
+// Imports ***********************
 @import 'reset';
 @import 'colors';
+@import 'unsemantic/unsemantic-grid-responsive-tablet-no-ie7';
 
-/* main */
+// Main block components *********
 
-h1 {
-	color: #123;
-}
+section {}
+footer {}
 
+// Header ***********************
 header {
-	background-image: url('../img/headerimg.jpg');
+	position: relative;
+	padding-top: 200px;
+	background-image: url('../img/header_b.jpg');
 	height: 500px;
+	-webkit-background-size: cover;	
+	background-size: cover;
+	background-position: 50% 100%;
+	.triangle {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 2;
+		@media (max-width: 767px) {display:none;}
+	}
 }
+
+#hero {
+	position: relative;
+	z-index: 3;
+	font-family: lato, sans-serif;
+	color: white;
+	font-size: 12px;
+	.text {
+	float: left;
+	padding-right: 120px;
+	text-transform: uppercase;}
+	h2 {font-size: 3em;}
+	h3 {font-size: 4em;font-weight: 600;}
+	img {
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;}
+}
+
+// Intro **************************
+#intro {
+	position: relative;
+	height: 600px;
+	background-color: $lightgrey;
+	.date {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-image: url('../img/whitetriangle.png');
+		width: 600px;
+		height: 300px;
+	}
+	.triangle {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: 2;
+		@media (max-width: 767px) {display:none;}
+	}
+}
+
+// Headings ***********************
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+
+// Links **************************
+a {}
+
+// Descriptions *******************
+dd {}
+dt {}
+
+
