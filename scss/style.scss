@@ -4,7 +4,9 @@
 @import 'reset';
 @import 'colors';
 @import 'unsemantic/unsemantic-grid-responsive-tablet-no-ie7';
-* {box-sizing: border-box;}
+* {
+	box-sizing: border-box;
+	font-family: lato, sans-serif;}
 
 // MISC Mixins *******************
 @mixin vertical-align {
@@ -15,7 +17,7 @@
   transform: translateY(-50%);
 }
 
-
+body {text-rendering: optimizeLegibility}
 
 // Main block components *********
 section {}
@@ -88,6 +90,11 @@ header {
 		background-color: none;
 		text-align: center;
 		color: white;
+		-webkit-transition: .2s all;
+		-moz-transition: .2s all;
+		-ms-transition: .2s all;
+		-o-transition: .2s all;
+		transition: .2s all;
 		&:hover {background-color: white; color: #164416;}
 	}
 }
@@ -149,6 +156,32 @@ header {
 		.big {right: 0;}
 		.small {right: 0;}
 	}
+}
+
+// Stats ***********************
+#stats {
+	padding: 50px 0;
+	ul {
+		li {
+			text-align: center;
+			font-family: lato, sans-serif;
+			margin: 50px 0;
+			dt {
+				font-size: 3em;
+				font-weight: 300;
+				color: $basegreen;
+			}
+
+			dd {
+				font-size: 1.2em;
+				text-transform: uppercase;
+				font-weight: 700;
+				color: $darkgrey;
+			}
+		}
+	}
+
+
 }
 
 // Headings ***********************
