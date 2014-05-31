@@ -20,7 +20,8 @@
 body {text-rendering: optimizeLegibility}
 
 // Main block components *********
-section {}
+section {position: relative;}
+
 footer {}
 .triangle {
 	position: absolute;
@@ -111,17 +112,18 @@ header {
 		right: 0;
 		background-image: url('../img/whitetriangle.png');
 		background-size: contain;
-		background-position: 50% 50%;
+		background-position: 50% 0%;
 		background-repeat: no-repeat;
 		max-width: 600px;
-		width: 100%;
+		width: 60%;
 		height: 300px;
-		@media (max-width: 767px) {height: 150px;}
+		@media (max-width: 767px) {height: 150px; width: 100%;}
 		time {
 			z-index: 4;
 			display: block;
 			position: relative;
 			top: 30%;
+			@media (max-width: 1024px) {top: 20%;}
 			@media (max-width: 767px) {top: 10%;}
 			margin: 0 auto;
 			font-family: lato, sans-serif;
@@ -138,7 +140,7 @@ header {
 	article {
 			font-family: lato, sans-serif;
 			color: $darkgrey;
-			z-index: 5;
+			z-index: 5 !important;
 			h2 {
 				z-index: 5;
 				font-weight: 700;
@@ -182,6 +184,36 @@ header {
 	}
 
 
+}
+
+// Sponsors ********************
+
+#sponsors {
+	padding: 100px 0;
+	background-color: $lightgrey;
+	
+	h2 {
+		z-index: 5;
+		font-weight: 700;
+		font-size: 2em;
+		margin-bottom: 2em;
+		font-family: lato, sans-serif;
+		color: $darkgrey;}
+	.sponsor {
+		margin-top: 5px; margin-bottom: 5px;
+		
+		h3 {
+			color: white;
+			font-family: lato;
+			text-transform: uppercase;
+			padding-top: 40px;
+			text-align: center;
+			height: 100px;
+			}
+		}
+	.gold {background-color: $gold;}
+	.silver {background-color: $silver;}
+	.bronze {background-color: $bronze;}
 }
 
 // Headings ***********************
