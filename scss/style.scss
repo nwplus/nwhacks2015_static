@@ -24,7 +24,7 @@ header {
 		bottom: 0;
 		left: 0;
 		z-index: 2;
-		@media (max-width: 767px) {display:none;}
+		@media (max-width: 767px) {width: 10%;}
 	}
 }
 
@@ -34,17 +34,21 @@ header {
 	font-family: lato, sans-serif;
 	color: white;
 	font-size: 12px;
+	@media (max-width: 767px) {max-width: 450px; margin: 0 auto;}
 	.text {
-	float: left;
-	padding-right: 120px;
-	text-transform: uppercase;}
-	h2 {font-size: 3em;}
-	h3 {font-size: 4em;font-weight: 600;}
+		float: left;
+		text-transform: uppercase;}
+	h2 {font-size: 3em; @media (max-width: 767px) {font-size: 2.5em;}}
+	h3 {font-size: 4em;font-weight: 600; @media (max-width: 767px) {font-size: 3.5em;}}
 	img {
-	height: 100%;
-	position: absolute;
-	right: 0;
-	top: 0;}
+		height: 100%;
+		//position: absolute;
+		float: right;
+		height: 13em;
+		right: 0;
+		top: 0;
+		@media (max-width: 767px) {height: 11em;}
+	}
 }
 
 // Intro **************************
