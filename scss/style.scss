@@ -1,5 +1,14 @@
+/* imports */
+@import 'reset';
+@import 'colors';
+
 /* main */
 
 h1 {
 	color: #123;
+}
+
+header {
+	background-image: url('../img/headerimg.jpg');
+	height: 500px;
 }
