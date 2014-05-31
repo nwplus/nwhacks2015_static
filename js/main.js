@@ -1,3 +1,4 @@
+// smooth scrolling when clicking on same-page links
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
@@ -12,3 +13,13 @@ $(function() {
     }
   });
 });
+
+// disable parralax if mobile device
+  if (Modernizr.touch){
+    
+    } else { 
+  
+  var s = skrollr.init();
+  
+  }
+  

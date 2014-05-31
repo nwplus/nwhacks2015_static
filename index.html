@@ -16,9 +16,7 @@
   />
 </head>
 <body>
-<div id="skrollr-body">
-
-	<header data-top="background-position:50% 50%" data--700-top="background-position:50% 100%">
+	<header data-top="background-position:50% 40%" data--700-top="background-position:50% 100%">
 	<div class="grid-container">
 		<div class="prefix-30 grid-40 suffix-30 tablet-prefix-20 tablet-grid-60 tablet-suffix-20" id="hero">
 			<div class="text">
@@ -88,15 +86,27 @@
 	</section>
 
 	<section id="faq">
-	<h2 class="prefix-5 grid-30 suffix-65 tablet-prefix-5 tablet-grid-60 tablet-suffix-35">Frequently Asked Questions</h2>
-	<nav>
-			<a href="#faq-general" class="active">General</a> &nbsp;|&nbsp;
-			<a href="#faq-students">Participation</a> &nbsp;|&nbsp;
-			<a href="#faq-sponsors">Sponsorship</a>
-	</nav>
+		<h2 class="prefix-5 grid-30 suffix-65 tablet-prefix-5 tablet-grid-60 tablet-suffix-35">Frequently Asked Questions</h2>
 		
-		<article id="faq-general" class="active">
+		<nav class="grid-container">
+				<a href="#faq-general" class="active">General</a> &nbsp;|&nbsp;
+				<a href="#faq-students">Participation</a> &nbsp;|&nbsp;
+				<a href="#faq-sponsors">Sponsorship</a>
+		</nav>
 			
+		<article id="faq-general" class="grid-container grid-parent active">
+			<div class="question grid-50 tablet-grid-50">
+				<h3>Why <em>nw</em>Hacks?</h3>
+				<p>As the largest hackathon in the Pacific Northwest region, nwHacks is the place to be to discover new talent as a sponsor, hone your skills as a participant, and make new friends as either. Because of the wide reach of nwHacks, you will be interacting with the top talent from across British Columbia, Washington, Oregon, Alberta and beyond.</p>
+			</div>
+			<div class="question grid-50 tablet-grid-50">
+				<h3>What is a "hackathon"?</h3>
+				<p>A hackathon is an event where teams of 2-5 people collaborate on an application within the specified time limit (nwHacks is 48 hours long). Prizes are awarded to the most creative, polished and theme-specific projects or "hacks". The winners will be chosen by a panel of judges comprised of top industry professionals.</p>
+			</div>
+			<div class="question grid-50 tablet-grid-50">
+				<h3>How can I officially sign up?</h3>
+				<p>A hackathon is an event where teams of 2-5 people collaborate on an application within the specified time limit (nwHacks is 48 hours long). Prizes are awarded to the most creative, polished and theme-specific projects or "hacks". The winners will be chosen by a panel of judges comprised of top industry professionals.</p>
+			</div>
 		</article>
 		
 		<article id="faq-students">
@@ -104,6 +114,7 @@
 
 		<article id="faq-sponsors">
 		</article>
+		
 	</section>
 	
 	<footer>
@@ -113,14 +124,13 @@
 		<p>nwhacks 2015&middot; Organised and held by <a href="http://apps.polydaic.com/" target="_blank">UBC App &amp; That</a> &middot;</p>
 		
 	</footer>
-</div>
+
 
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="js/skrollr.js"></script>
-	<script type="text/javascript">
-	var s = skrollr.init();
-	</script>
+	<script src="js/min/modernizr-ck.js"></script>
+	
 	<script src="js/min/main-ck.js"></script>
 </body>
 </html>

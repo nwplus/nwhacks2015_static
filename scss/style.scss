@@ -138,6 +138,7 @@ header {
 		}
 	}
 	article {
+			position: relative;
 			font-family: lato, sans-serif;
 			color: $darkgrey;
 			z-index: 5 !important;
@@ -219,15 +220,55 @@ header {
 // FAQ ****************************
 
 #faq {
-		padding: 100px 0;
-
-		h2 {
-			z-index: 5;
-			font-weight: 700;
-			font-size: 2em;
-			margin-bottom: 2em;
+	padding: 100px 0;
+	
+	nav {
+		padding: 0 10px;
+		margin-bottom: 15px;
+		font-size: 24px;
+		top: 4px;
+		color: $maingrey;
+		font-weight: 300;
+		a {
+			top: 0;
+			text-decoration: none;
 			font-family: lato, sans-serif;
+			font-size: .8em;
+			font-weight: 400;
+			text-transform: uppercase;
 			color: $darkgrey;}
+		.active {
+			color: $basegreen;}
+		}
+		
+	h2 {
+		z-index: 5;
+		font-weight: 700;
+		font-size: 2em;
+		margin-bottom: 2em;
+		font-family: lato, sans-serif;
+		color: $darkgrey;}
+	article {
+		.question {
+			min-height: 200px;
+			font-family: lato, sans-serif;
+			margin: 10px 0;
+			h3 {
+				text-transform: uppercase;
+				font-size: 1.7em;
+				color: $darkgrey;
+				font-weight: 700;
+				margin-bottom: .25em;
+				em {text-transform: none;}
+			}
+			p {
+				line-height: 1.35em;
+			}
+			
+		}
+	.active {display: block;}
+	.hidden {display: none;}
+	}
 }
 
 // Headings ***********************
