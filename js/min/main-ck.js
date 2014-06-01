@@ -1,0 +1,1 @@
+if($("#faq nav a").click(function(a){a.preventDefault(),$("#faq article").removeClass("active"),$("#faq nav a").removeClass("activetab"),$($(this).attr("href")).addClass("active"),$(this).addClass("activetab")}),Modernizr.touch);else var s=skrollr.init();
