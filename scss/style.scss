@@ -58,6 +58,7 @@ header {
 	color: white;
 	font-size: 12px;
 	padding: 0;
+	text-align: center;
 	@media (max-width: 767px) {max-width: 450px; margin: 0 auto;}
 	.text {
 		float: left;
@@ -65,8 +66,10 @@ header {
 		@media (max-width: 360px) {text-shadow: 1px 1px black;}}
 	h2 {
 		font-size: 3em; 
+		text-align: left;
 		@media (max-width: 767px) {font-size: 2.5em;}}
 	h3 {
+		text-align: left;
 		font-size: 4em;font-weight: 600; 
 		@media (max-width: 767px) {font-size: 3.5em;}}
 	img {
@@ -80,9 +83,8 @@ header {
 		@media (max-width: 370px) {float: none;}
 	}
 	a {
-		display: block;
+		display: inline-block;
 		margin: 125px auto 100px auto;
-		width: 7em;
 		text-transform: uppercase;
 		font-size: 18px;
 		height: 2.5em; line-height: 2.5em;
@@ -229,9 +231,6 @@ header {
 		padding: 0 10px;
 		margin-bottom: 15px;
 		font-size: 24px;
-		top: 4px;
-		color: $maingrey;
-		font-weight: 300;
 		a {
 			top: 0;
 			text-decoration: none;
@@ -240,11 +239,23 @@ header {
 			font-weight: 400;
 			text-transform: uppercase;
 			color: $darkgrey;
+			@media (max-width: 767px) {display: block; line-height: 1.85em;}
 			&:hover {
-				color: $lightgreen;
-			}}
+				color: $lightgreen;}
+
+			&:before {
+				content: ' | ';
+				font-size: 24px;
+				top: 4px;
+				color: $maingrey;
+				font-weight: 300;
+				@media (max-width: 767px) {content: ''}
+			}
+			&:first-of-type {&:before {content:'';}}			
+			}
 		.activetab {
-			color: $basegreen;}
+			color: $basegreen;
+			@media (max-width: 767px) {text-decoration: underline;}}
 		}
 		
 	h2 {
@@ -274,6 +285,56 @@ header {
 			
 		}
 	}
+}
+
+// Footer *************************
+footer {
+	background-color: $basegreen;
+	padding-top: 50px; padding-bottom: 50px;
+	background-image: url('../img/footertriangle.png');
+	background-repeat: no-repeat;
+	background-position: top right;
+	@media (max-width: 767px) {background-size: 40%;}
+	width: 100%;
+	position: relative;
+	.imgcont {
+	position: absolute;
+	right: 150px;
+	top: 50px;
+	@media (max-width: 767px) {position: relative; padding-left: 10px; width: 100%; top: 0; right: 0; padding-top: 30px;}
+	img {height: 65px;}
+	}
+	nav {
+		margin-bottom: 1em;
+		a {
+			top: 0;
+			text-decoration: none;
+			font-family: lato, sans-serif;
+			font-size: 1em;
+			font-weight: 400;
+			color: white;
+			@media (max-width: 767px) {display: block; line-height: 1.85em; font-size: 1.4em;}
+			&:hover {
+				color: $darkgreen;}
+
+			&:before {
+				content: ' | ';
+				font-size: 18px;
+				top: 4px;
+				color: white;
+				font-weight: 300;
+				@media (max-width: 767px) {content: ''}
+			}
+			&:first-of-type {&:before {content:'';}}			
+			}
+		}
+	p {
+		color: white;
+		font-family: lato, sans-serif;
+		font-size: 1em;
+		font-weight: 300;
+		@media (max-width: 767px) {font-size: 1.2em;}
+		a {color: white; text-decoration: underline;}}
 }
 
 // Headings ***********************
