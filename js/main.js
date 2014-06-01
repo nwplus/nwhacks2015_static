@@ -1,17 +1,9 @@
-// smooth scrolling when clicking on same-page links
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
+$("#faq nav a").click(function(e) {
+  e.preventDefault();
+  $("#faq article").removeClass( "active" );
+  $("#faq nav a").removeClass( "activetab" );
+  $($(this).attr("href")).addClass("active");
+  $(this).addClass("activetab");
 });
 
 // disable parralax if mobile device

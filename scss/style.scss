@@ -8,7 +8,7 @@
 	box-sizing: border-box;
 	font-family: lato, sans-serif;}
 
-// MISC Mixins *******************
+// MISC Mixins & Classes ********
 @mixin vertical-align {
   position: relative;
   top: 50%;
@@ -16,6 +16,9 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
+.active {display: block !important;}
+.hidden {display: none !important;}
 
 body {text-rendering: optimizeLegibility}
 
@@ -236,8 +239,11 @@ header {
 			font-size: .8em;
 			font-weight: 400;
 			text-transform: uppercase;
-			color: $darkgrey;}
-		.active {
+			color: $darkgrey;
+			&:hover {
+				color: $lightgreen;
+			}}
+		.activetab {
 			color: $basegreen;}
 		}
 		
@@ -249,6 +255,7 @@ header {
 		font-family: lato, sans-serif;
 		color: $darkgrey;}
 	article {
+		display: none;
 		.question {
 			min-height: 200px;
 			font-family: lato, sans-serif;
@@ -266,8 +273,6 @@ header {
 			}
 			
 		}
-	.active {display: block;}
-	.hidden {display: none;}
 	}
 }
 
