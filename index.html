@@ -1,134 +1,170 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>nwHacks 1.0</title>
+	<title>nwHacks 2015</title>
 	<link rel="icon" href="favicon.ico">
-	<link rel="stylesheet" href="//brick.a.ssl.fastly.net/Roboto:200,300,400,500,700,900">
-	<link rel="stylesheet" href="css/style.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+	  <meta
+    name="viewport"
+    content="
+      width=device-width,
+      initial-scale=1,
+      minimum-scale=1,
+      maximum-scale=1
+    "
+  />
 </head>
-<body class="loading">
-	<header>
-		<div><img id="logo" src="images/logo.white.svg" alt="({nwHacks})"></div>
-		<h2>Welcome to the largest hackathon<br>in the Pacific Northwest.</h2>
-		<nav>
-			<a href="#">Register</a>
-			<a href="#intro">About</a>
 
-			<a href="/sponsors.pdf">Sponsor Us</a>
-			<!--<a href="#sponsors">Sponsors</a> -->
-			<a href="#faq">FAQ</a>
-		</nav>
-		<h1>nwHacks <span>1.0</span></h1>
-		<h3>Early January, 2015</h3>
+<body>
+	<header data-top="background-position:50% 40%" data--700-top="background-position:50% 100%">
+	<div class="grid-container">
+		<div class="prefix-30 grid-40 suffix-30 tablet-prefix-20 tablet-grid-60 tablet-suffix-20" id="hero">
+			<div class="text">
+				<h2>The Pacific <br> Northwest's</h2>
+				<h3>biggest</h3>
+				<h2>hackathon</h2>
+			</div>
+			<img src="img/logo_notxt.png" alt="logo">
+			<div class="clear"></div>
+			<a href="#intro">Pre-Register Now</a>
+		</div>
+
+		<div class="triangle"><img class="small" src="img/darkgreentriangle.png" alt=""><img class="big" src="img/lightgreentriangle.png" alt=""></div>
+	</div>
 	</header>
+	
 	<section id="intro">
-		<h1>This is nwHacks.</h1>
-		<ul id="stats">
-			<li>
+
+		<div class="date">
+			<time datetime="2015-01-15">
+				<span class="month">January</span>
+				<span class="day">15<sup>th</sup></span>
+				<br>
+				<span class="year">2015</span>
+			</time>
+		</div>
+		<article class="grid-container">
+			<h2 class="grid-100">THIS IS nwHACKS.</h2>
+			<p class="grid-70 suffix-30 tablet-grid-70 tablet-suffix-30 mobile-grid-90 mobile-suffix-10">
+				nwHacks is the largest hackathon in the Pacific Northwest, hosted every year in Vancouver, British Columbia. Anyone and everyone is welcome at nwHacks, from hackathon veterans to first-timers!
+			</p>
+		</article>
+		<div class="triangle"><img class="small" src="img/darkgreentriangleR.png" alt=""><img class="big" src="img/lightgreentriangleR.png" alt=""></div>
+	</section>
+
+	<section id="stats" class="grid-container">
+		<ul class="grid-container">
+			<li class="grid-33 tablet-grid-33">
 				<dt>400+</dt>
-				<dd>hackers</dd>
+				<dd>Hackers</dd>
 			</li>
-			<li>
+			<li class="grid-33 tablet-grid-33">
 				<dt>48</dt>
-				<dd>hours</dd>
+				<dd>Hours</dd>
 			</li>
-			<li>
+
+			<li class="grid-33 tablet-grid-33">
 				<dt>$2,500</dt>
-				<dd>in prizes</dd>
+				<dd>In Prizes</dd>
 			</li>
 		</ul>
-		<p>nwHacks in the largest hackathon in the Pacific Northwest, hosted every semester at the University of British Columbia. Anyone and everyone is welocme at nwhacks, from hackathon veterans to first-timers!</p>
-		<a href="#" class="btn register" disabled="disabled">Register</a>
 	</section>
+	
 	<section id="sponsors">
-		<h1 class="width">Sponsors</h1>
-		<!--
-		<div id="montage" class="hidden">
-			<div>
-				<a href="#" style="background: #000"><img src="http://cdn.shopify.com/assets/images/affiliates-badges-banners/logos/shopify-2010-white.png?1399058777" alt=""></a>
-			</div>
-			<div>
-				<a href="#" style="background: #3686be"><img src="https://www.digitalocean.com/assets/images/cloud-6a1216d2.svg" alt=""></a>
-				<a href="#" style="background: #FFF"><img src="https://github.global.ssl.fastly.net/images/modules/logos_page/Octocat.png" alt=""></a>
-			</div>
-			<div>
-				<a href="#" style="background: #FFF"><img src="http://upload.wikimedia.org/wikipedia/commons/a/aa/Logo_Google_2013_Official.svg" alt=""></a>
-				<a href="#" style="background: #55ACEE"><img src="https://g.twimg.com/Twitter_logo_white.png" alt=""></a>
-				<a href="#" style="background: #002145"><img src="http://assets.brand.ubc.ca/signatures/4_logo/4_reverse/rgb/s4r.png" alt=""></a>
-				<a href="#" style="background: #FFF"><img src="http://www.washington.edu/marketing/files/2012/09/UW.Wordmark_stacked_K.jpg" alt=""></a>
-			</div>
-		</div>
-		-->
+		<article class="grid-container">
+		<h2 class="">Sponsors</h2>
+				<div class="sponsor prefix-20 grid-60 suffix-20 tablet-prefix-20 tablet-grid-60 tablet-suffix-20 gold"><h3>Your Company Here</h3></div>
+				<div class="sponsor grid-50 tablet-grid-50 silver"><h3>Your Company Here</h3></div>
+				<div class="sponsor grid-50 tablet-grid-50 silver"><h3>Your Company Here</h3></div>
+				<div class="sponsor grid-25 tablet-grid-25 mobile-grid-50 bronze"><h3>Your Company Here</h3></div>
+				<div class="sponsor grid-25 tablet-grid-25 mobile-grid-50 bronze"><h3>Your Company Here</h3></div>
+				<div class="sponsor grid-25 tablet-grid-25 mobile-grid-50 bronze"><h3>Your Company Here</h3></div>
+				<div class="sponsor grid-25 tablet-grid-25 mobile-grid-50 bronze"><h3>Your Company Here</h3></div>
+				<div class="sponsor grid-25 tablet-grid-25 mobile-grid-50 bronze"><h3>Your Company Here</h3></div>
+				<div class="sponsor grid-25 tablet-grid-25 mobile-grid-50 bronze"><h3>Your Company Here</h3></div>
+				<div class="sponsor grid-25 tablet-grid-25 mobile-grid-50 bronze"><h3>Your Company Here</h3></div>
+				<div class="sponsor grid-25 tablet-grid-25 mobile-grid-50 bronze"><h3>Your Company Here</h3></div>
+		</article>
 	</section>
-	<section id="faq" class="width">
-		<h1>Frequently Asked Questions</h1>
-		<nav>
-			<a href="#faq-general" class="active">General</a> &nbsp;|&nbsp;
-			<a href="#faq-students">Students</a> &nbsp;|&nbsp;
-			<a href="#faq-sponsors">Sponsors</a>
-		</nav>
-		
-		<article id="faq-general" class="active">
-			<h4>Why &lsquo;nwhacks&rsquo;?</h4>
-			<p>As the largest hackathon in the Pacific NorthWest Region, nwHacks is premiere hackathon, attracting the top hackers from Seattle, Vancouver, Victoria and Portland.</p>
-			
-			<h4>What is a &lsquo;Hackathon&rsquo;?</h4>
-			<p>A Hackathon is an event where teams of 2-5 people create a software/hardware app in a limited amount of time (nwHacks is 48hours long). Prizes are awarded to the most polished, creative and most applicable projects or "hacks". The winners will be chosen by a panel of judges.</p>
 
-			<h4>How can I officially signup?</h4>
-			<p>Right now, officical registration for nwHacks 1.0 isn't open (yet) but if you are interested in attending, 
-			definitely fill out <a style="font-color:blue;" href="/signup">this form here</a> and we'll be sure to provide more information
-			about nwHacks as we get closer to January!
-			</p>
+	<section id="faq">
+		<div class="grid-container">
+			<h2>Frequently Asked Questions</h2>
+		</div>
+		<nav class="grid-container tabs">
+				<a href="#faq-general" class="activetab">General</a>
+				<a href="#faq-students">Participation</a> 
+				<a href="#faq-sponsors">Sponsorship</a>
+		</nav>
 			
+		<article id="faq-general" class="grid-container grid-parent active">
+			<div class="question grid-50 tablet-grid-50">
+				<h3>Why <em>nw</em>Hacks?</h3>
+				<p>As the largest hackathon in the Pacific Northwest region, nwHacks is the place to be to discover new talent as a sponsor, hone your skills as a participant, and make new friends as either. Because of the wide reach of nwHacks, you will be interacting with the top talent from across British Columbia, Washington, Oregon, Alberta and beyond.</p>
+			</div>
+			<div class="question grid-50 tablet-grid-50">
+				<h3>What is a "hackathon"?</h3>
+				<p>A hackathon is an event where teams of 2-5 people collaborate on an application within the specified time limit (nwHacks is 48 hours long). Prizes are awarded to the most creative, polished and theme-specific projects or "hacks". The winners will be chosen by a panel of judges comprised of top industry professionals.</p>
+			</div>
+			<div class="question grid-50 tablet-grid-50">
+				<h3>How can I officially sign up?</h3>
+				<p>Official registration for nwHacks 2015 isn't open yet, but you can submit your email <a href="#intro">here</a> to get updates as soon as they arrive.</p>
+			</div>
+
 		</article>
 		
-		<article id="faq-students">
-			<h4>What should I bring?</h4>
-			<p>nwHacks is a 48hour event, which means that hackers should be prepared to sleep overnight at the venue. Be sure to bring everything you need to stay the night, including a sleeping bag! All food will be provided at event so don't worry about that!</p>
-			
-			<h4>How much does it cost?</h4>
-			<p>nwHacks is 100% free for all participants. However registration is strictly limited to <strong> highschool and college students only </strong>. We will also reimburse your travel expensives as long as they are not flights and are within a 200km radius of the event. We are also setting up buses from Seattle, Portland, and Victoria ( maybe Calgary)</strong> so definitely check that out as we get closer to the start date!</p>
-			
-			
-			<h4> Can I work on my previous projects?</h4>
-			<p> No, all "hacks" must be built from scratch, although it is ok if you came up with the idea before hand. This rule is strictly adhered to at nwHacks and any team found working on a project that they already started will be automatically disqualified in the event. However this <strong> does not apply</strong> to any libraries or tools that you have made, so feel free to use libraries and anyother code!</p>
-			
-			<h4>How big can my team be?</h4>
-			<p>Teams are usually 2-5 people in size. Teams bigger than 5 people are usually split up into smaller ones, as we've found large teams 
-			   aren't the best solution for a 48h event. Don't worry if you can't find your team beforehand, staff at the event will help you find other 
-			   team mates and provide you with many opportunities to find others to help!
-			</p>
-			
-		
-					<!--<h4>What are the prizes?</h4>
-			<p>5000 will be given to the winning team, as judged by our panel of awesome judges! For -->
+		<article id="faq-students" class="grid-container grid-parent">
+			<div class="question grid-50 tablet-grid-50">
+				<h3>What should I bring?</h3>
+				<p>nwHacks is a 48hour event, which means that hackers should be prepared to sleep overnight at the venue. Be sure to bring everything you need to stay the night, including a sleeping bag! All food will be provided at event so don't worry about that!</p>
+			</div>
+			<div class="question grid-50 tablet-grid-50">
+				<h3>How much does it cost?</h3>
+				<p>nwHacks is 100% free for all participants. However registration is strictly limited to <b>highschool and college students only</b>. We will also reimburse your travel expensives as long as they are not flights and are within a 200km radius of the event. We are also setting up buses from Seattle, Portland, and Victoria ( maybe Calgary) so definitely check that out as we get closer to the start date!</p>
+			</div>
+			<div class="question grid-50 tablet-grid-50">
+				<h3>Can I work on my previous projects?</h3>
+				<p>No, all "hacks" must be built from scratch, although it is ok if you came up with the idea before hand. This rule is strictly adhered to at nwHacks and any team found working on a project that they already started will be automatically disqualified in the event. However this does not apply to any libraries or tools that you have made, so feel free to use libraries and anyother code!</p>
+			</div>
+			<div class="question grid-50 tablet-grid-50">
+				<h3>How big can my team be?</h3>
+				<p>Teams are usually 2-5 people in size. Teams bigger than 5 people are usually split up into smaller ones, as we've found large teams aren't the best solution for a 48h event. Don't worry if you can't find your team beforehand, staff at the event will help you find other team mates and provide you with many opportunities to find others to help!</p>
+			</div>
 		</article>
-		<article id="faq-sponsors">
-			<h4>Where is the sponsorship package?</h4>
-			<p> Good thing you asked! You can find it <a href="./sponsors.pdf" style="font-color:blue"> right here</a></p>
-			<h4> How do I get in touch for sponsorship opportunities?</h4>
-			<p> The best way to get in touch is email us at sponsors@nwhacks.com. We're pretty busy but you can expect a response in about 48 hours.</p>
-		
-			<h4> Does my company have to be based in the Pacific NorthWest to become a sponsor?</h4>
-			<p> Definitely not! We welcome sponsors from across the world to help with our event, although it generally helps if you have an office or presence in the region.</p>
-			
-			
-			<!--
-			<h4>What can we do to contribute?</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, architecto, id, quidem aspernatur minima neque eius doloribus qui in incidunt laborum magnam. Odit, saepe earum corrupti enim repudiandae. Illo, laudantium, vero, culpa aliquid repellat consequatur quibusdam dolore laborum iure perspiciatis suscipit ea saepe optio vel expedita error quod eligendi laboriosam rem quia fugiat neque numquam magni sed rerum iusto voluptatibus libero odio ab. Nostrum, sed, consequuntur autem odio maiores aspernatur ab excepturi minima distinctio error. Quis dolorem tempore minus eius deleniti ipsum qui. Deserunt, similique, animi, ratione voluptatum at quia pariatur assumenda minima eius illo veritatis harum autem! Perferendis, magni.</p>
-			-->
-			
+
+		<article id="faq-sponsors" class="grid-container grid-parent">
+			<div class="question grid-50 tablet-grid-50">
+				<h3>Where is the sponsorship package?</h3>
+				<p>It can be found right <a href="#">here</a>.</p>
+			</div>
+			<div class="question grid-50 tablet-grid-50">
+				<h3>How do I get in touch for sponsorship opportunities?</h3>
+				<p>The best way to get in touch is email us at sponsors@nwhacks.com. We're pretty busy but you can expect a response in about 48 hours.</p>
+			</div>
+			<div class="question grid-50 tablet-grid-50">
+				<h3>Does my company have to be based in the Pacific NorthWest to become a sponsor?</h3>
+				<p>Definitely not! We welcome sponsors from across the world to help with our event, although it generally helps if you have an office or presence in the region.</p>
+			</div>
 		</article>
 		
 	</section>
-	<footer>
-		<nav>
-			<a href="#">Register</a> &middot; <a href="mailto:sponsors@nwhacks.com">Become a sponsor</a> &middot; <a href="mailto:info@nwhacks.com">Email us</a>
+	
+	<footer class="grid-parent">
+		<nav class="grid-container">
+			<a href="#">Register</a> <a href="#">Become a Sponsor</a> <a href="mailto:info@nwhacks.com">Email us</a>
 		</nav>
-		<p>nwhacks 2014 &middot; Organised and held by <a href="http://apps.polydaic.com/" target="_blank">UBC App &amp; That</a> &middot; Design by <a href="http://alfredxing.com" target="_blank">Alfred Xing</a></p>
+		<p class="grid-container">nwhacks 2015 - Organised and held by <a href="http://apps.polydaic.com/" target="_blank">devApp</a></p>
+		<div class="imgcont"><img class src="img/logotxt.png" alt=""></div>
+
 	</footer>
+
+
+
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/skrollr.js"></script>
+	<script src="js/min/modernizr-ck.js"></script>
+	<script src="js/min/tabby-ck.js"></script>
+	<script src="js/min/main-ck.js"></script>
 </body>
 </html>

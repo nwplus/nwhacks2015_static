@@ -1,0 +1,354 @@
+// MAIN STYLESHEET -- style.scss
+
+// Imports ***********************
+@import 'reset';
+@import 'colors';
+@import 'unsemantic/unsemantic-grid-responsive-tablet-no-ie7';
+* {
+	box-sizing: border-box;
+	font-family: lato, sans-serif;}
+
+// MISC Mixins & Classes ********
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.active {display: block !important;}
+.hidden {display: none !important;}
+
+body {text-rendering: optimizeLegibility}
+
+// Main block components *********
+section {position: relative;}
+
+footer {}
+.triangle {
+	position: absolute;
+	bottom: 0;
+	z-index: 2;
+	width: 100%;
+	.big {z-index: 2;position: absolute;bottom: 0;width: 50%; max-width: 600px;}
+	.small {z-index: 2;position: absolute;bottom: 0;width: 20%; max-width: 250px;}
+	}
+
+// Header ***********************
+header {
+	position: relative;
+	padding-top: 225px;
+	@media (max-width: 767px) {padding-top: 50px;}
+	background-image: url('../img/header_b.jpg');
+	-webkit-background-size: cover;	
+	background-size: cover;
+	background-position: 50% 100%;
+	.triangle {
+		left: 0;
+		.big {left: 0;}
+		.small {left: 0;}
+	}
+}
+
+#hero {
+	position: relative;
+	z-index: 4;
+	font-family: lato, sans-serif;
+	color: white;
+	font-size: 12px;
+	padding: 0;
+	text-align: center;
+	@media (max-width: 767px) {max-width: 450px; margin: 0 auto;}
+	.text {
+		float: left;
+		text-transform: uppercase;
+		@media (max-width: 360px) {text-shadow: 1px 1px black;}}
+	h2 {
+		font-size: 3em; 
+		text-align: left;
+		@media (max-width: 767px) {font-size: 2.5em;}}
+	h3 {
+		text-align: left;
+		font-size: 4em;font-weight: 600; 
+		@media (max-width: 767px) {font-size: 3.5em;}}
+	img {
+		height: 100%;
+		//position: absolute;
+		float: right;
+		height: 13em;
+		right: 0;
+		top: 0;
+		@media (max-width: 767px) {height: 11em;}
+		@media (max-width: 370px) {float: none;}
+	}
+	a {
+		display: inline-block;
+		margin: 125px auto 100px auto;
+		text-transform: uppercase;
+		font-size: 18px;
+		height: 2.5em; line-height: 2.5em;
+		z-index: 5;
+		text-decoration: none;
+		border-radius: 4px;
+		border: 1px white solid;
+		padding: 0 1em;
+		background-color: none;
+		text-align: center;
+		color: white;
+		-webkit-transition: .2s all;
+		-moz-transition: .2s all;
+		-ms-transition: .2s all;
+		-o-transition: .2s all;
+		transition: .2s all;
+		&:hover {background-color: white; color: #164416;}
+	}
+}
+
+// Intro **************************
+#intro {
+	position: relative;
+	padding: 200px 0;
+	height: 600px;
+	background-color: $lightgrey;
+	.date {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-image: url('../img/whitetriangle.png');
+		background-size: contain;
+		background-position: 50% 0%;
+		background-repeat: no-repeat;
+		max-width: 600px;
+		width: 60%;
+		height: 300px;
+		@media (max-width: 767px) {height: 150px; width: 100%;}
+		time {
+			z-index: 4;
+			display: block;
+			position: relative;
+			top: 30%;
+			@media (max-width: 1024px) {top: 20%;}
+			@media (max-width: 767px) {top: 10%;}
+			margin: 0 auto;
+			font-family: lato, sans-serif;
+			text-transform: uppercase;
+			font-size: 32px;
+			width: 100%;
+			text-align: center;
+			.month {color: $basegreen; padding-left: 1em;}
+			.day {color: $basegreen;
+				sup {position: relative; top: -1.2em; font-size: 40%;}}
+			.year {color: $darkgrey;}
+		}
+	}
+	article {
+			position: relative;
+			font-family: lato, sans-serif;
+			color: $darkgrey;
+			z-index: 5 !important;
+			h2 {
+				z-index: 5;
+				font-weight: 700;
+				font-size: 2em;
+				margin-bottom: 2em;}
+			p {
+				z-index: 5;
+				font-size: 1.5em;
+				line-height: 1.2em;
+				font-weight: 300;}
+			}
+
+	.triangle {
+		right: 0;
+		.big {right: 0;}
+		.small {right: 0;}
+	}
+}
+
+// Stats ***********************
+#stats {
+	padding: 50px 0;
+	ul {
+		li {
+			text-align: center;
+			font-family: lato, sans-serif;
+			margin: 50px 0;
+			dt {
+				font-size: 3em;
+				font-weight: 300;
+				color: $basegreen;
+			}
+
+			dd {
+				font-size: 1.2em;
+				text-transform: uppercase;
+				font-weight: 700;
+				color: $darkgrey;
+			}
+		}
+	}
+
+
+}
+
+// Sponsors ********************
+
+#sponsors {
+	padding: 100px 0;
+	background-color: $lightgrey;
+	
+	h2 {
+		z-index: 5;
+		font-weight: 700;
+		font-size: 2em;
+		margin-bottom: 2em;
+		font-family: lato, sans-serif;
+		color: $darkgrey;}
+	.sponsor {
+		margin-top: 5px; margin-bottom: 5px;
+		
+		h3 {
+			color: white;
+			font-family: lato;
+			text-transform: uppercase;
+			padding-top: 40px;
+			text-align: center;
+			height: 100px;
+			}
+		}
+	.gold {background-color: $gold;}
+	.silver {background-color: $silver;}
+	.bronze {background-color: $bronze;}
+}
+
+// FAQ ****************************
+
+#faq {
+	padding: 100px 0;
+	
+	nav {
+		padding: 0 10px;
+		margin-bottom: 15px;
+		font-size: 24px;
+		a {
+			top: 0;
+			text-decoration: none;
+			font-family: lato, sans-serif;
+			font-size: .8em;
+			font-weight: 400;
+			text-transform: uppercase;
+			color: $darkgrey;
+			@media (max-width: 767px) {display: block; line-height: 1.85em;}
+			&:hover {
+				color: $lightgreen;}
+
+			&:before {
+				content: ' | ';
+				font-size: 24px;
+				top: 4px;
+				color: $maingrey;
+				font-weight: 300;
+				@media (max-width: 767px) {content: ''}
+			}
+			&:first-of-type {&:before {content:'';}}			
+			}
+		.activetab {
+			color: $basegreen;
+			@media (max-width: 767px) {text-decoration: underline;}}
+		}
+		
+	h2 {
+		z-index: 5;
+		font-weight: 700;
+		font-size: 2em;
+		margin-bottom: 2em;
+		font-family: lato, sans-serif;
+		color: $darkgrey;}
+	article {
+		display: none;
+		.question {
+			min-height: 200px;
+			font-family: lato, sans-serif;
+			margin: 10px 0;
+			h3 {
+				text-transform: uppercase;
+				font-size: 1.7em;
+				color: $darkgrey;
+				font-weight: 700;
+				margin-bottom: .25em;
+				em {text-transform: none;}
+			}
+			p {
+				line-height: 1.35em;
+			}
+			
+		}
+	}
+}
+
+// Footer *************************
+footer {
+	background-color: $basegreen;
+	padding-top: 50px; padding-bottom: 50px;
+	background-image: url('../img/footertriangle.png');
+	background-repeat: no-repeat;
+	background-position: top right;
+	@media (max-width: 767px) {background-size: 40%;}
+	width: 100%;
+	position: relative;
+	.imgcont {
+	position: absolute;
+	right: 150px;
+	top: 50px;
+	@media (max-width: 767px) {position: relative; padding-left: 10px; width: 100%; top: 0; right: 0; padding-top: 30px;}
+	img {height: 65px;}
+	}
+	nav {
+		margin-bottom: 1em;
+		a {
+			top: 0;
+			text-decoration: none;
+			font-family: lato, sans-serif;
+			font-size: 1em;
+			font-weight: 400;
+			color: white;
+			@media (max-width: 767px) {display: block; line-height: 1.85em; font-size: 1.4em;}
+			&:hover {
+				color: $darkgreen;}
+
+			&:before {
+				content: ' | ';
+				font-size: 18px;
+				top: 4px;
+				color: white;
+				font-weight: 300;
+				@media (max-width: 767px) {content: ''}
+			}
+			&:first-of-type {&:before {content:'';}}			
+			}
+		}
+	p {
+		color: white;
+		font-family: lato, sans-serif;
+		font-size: 1em;
+		font-weight: 300;
+		@media (max-width: 767px) {font-size: 1.2em;}
+		a {color: white; text-decoration: underline;}}
+}
+
+// Headings ***********************
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+
+// Links **************************
+a {}
+
+// Descriptions *******************
+dd {}
+dt {}
+
+
