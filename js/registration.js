@@ -1,8 +1,6 @@
 // On page load...
 $(function() {
-  //Initialize Parse
-  Parse.initialize("dHa1lqKqjUFf48Iw5tc4puKB0kbv1ONnejI6q91o", "nEU6Qig9G0ldjBALkayRR5cMWQUc7qMXbjGjsGE0");
-  $('form').hide();
+
 
   // should really disable the return key 
   $('form').bind("keyup keypress", function(e) {
